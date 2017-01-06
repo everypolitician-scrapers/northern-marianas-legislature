@@ -54,4 +54,5 @@ end
 #   scrape_term(termid)
 # end
 
+ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
 scrape_term(19)
