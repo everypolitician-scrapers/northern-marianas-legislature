@@ -2,11 +2,11 @@
 # encoding: utf-8
 # frozen_string_literal: true
 
-require 'scraperwiki'
 require 'nokogiri'
 require 'open-uri'
-
 require 'pry'
+require 'scraperwiki'
+
 require 'open-uri/cached'
 OpenURI::Cache.cache_path = '.cache'
 
@@ -57,8 +57,8 @@ def scrape_term(termid)
   end
 end
 
-#  (1..19).reverse_each do |termid|
-#  scrape_term(termid)
+# (1..19).reverse_each do |termid|
+#   scrape_term(termid)
 # end
 
 scrape_term(19)
